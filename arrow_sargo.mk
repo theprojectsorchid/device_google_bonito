@@ -62,15 +62,15 @@ endif
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := google
-PRODUCT_NAME := aosp_sargo
+PRODUCT_NAME := arrow_sargo
 PRODUCT_DEVICE := sargo
 PRODUCT_MODEL := Pixel 3a
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common OrchidOS arrow support stuff.
+include vendor/arrow/config/common.mk
 
 include device/google/bonito/device-custom.mk
 

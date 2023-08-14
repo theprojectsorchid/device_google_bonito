@@ -70,7 +70,7 @@ PRODUCT_MODEL := Pixel 3a XL
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 include device/google/bonito/device-custom.mk
 
